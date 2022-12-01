@@ -1,0 +1,82 @@
+body{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(0, 0, 0);
+}
+.p1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+    gap: 4rem;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: grey;
+    width: 100%;
+    max-width: 30rem;
+    height: 30rem;
+    border-radius: 20px;
+}
+#roma{
+    width: 100%;
+    max-width: 16rem;
+    border: none;
+    border-radius: 20px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.15rem;
+}
+#number{
+    width: 100%;
+    max-width: 16rem;
+    border: none;
+    border-radius: 20px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.15rem;
+}
+#roma::placeholder{
+    text-align: center;
+}
+#number::placeholder{
+    text-align: center;
+}
+#btn_r{
+    border: none;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.075rem;
+}
+#btn_n{
+    border: none;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.075rem;
+    margin-top: -2rem;
+}
+@keyframes btn_back{
+    from{left: 0%;}
+    to{background-color: rgb(33, 202, 253); left: 100%;}
+}
+#btn_r:hover{
+    cursor: pointer;
+    animation: btn_back 0.05s linear forwards;
+}
+#btn_n:hover{
+    cursor: pointer;
+    animation: btn_back 0.05s linear forwards;
+}
+#del{
+    border: none;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.075rem;
+    margin-top: -2rem;
+}
+#del:hover{
+    cursor: pointer;
+    animation: btn_back 0.05s linear forwards;
+}
